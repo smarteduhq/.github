@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/demy.png" alt="Demy" width="360" />
+<img src="./assets/demy.webp" alt="Demy" width="360" />
 
 ### Plataforma académica todo-en-uno para academias de educación tradicional
 
@@ -20,6 +20,20 @@
 **Demy** es una plataforma web pensada para simplificar la gestión académica y administrativa de academias de educación tradicional (preuniversitarias, institutos, academias de reforzamiento, etc.). Centraliza en un solo lugar procesos que hoy suelen resolverse con hojas de cálculo y mensajes sueltos: matrículas, horarios, asistencia, pagos y administración de usuarios.
 
 El proyecto nació como parte del curso **1ASI0729 - Desarrollo de Aplicaciones Open Source** de la carrera de Ingeniería de Software de la **Universidad Peruana de Ciencias Aplicadas (UPC)**, bajo la startup ficticia **SmartEdu**, y fue construido siguiendo **Lean UX** y **Domain-Driven Design (DDD)**, con una separación clara en bounded contexts: IAM, Enrollments, Scheduling, Attendance y Billing.
+
+## Vista previa
+
+<div align="center">
+
+<table>
+<tr>
+<td width="33%"><img src="./assets/screenshots/login.webp" alt="Login de Demy" /><br/><sub>Inicio de sesión</sub></td>
+<td width="33%"><img src="./assets/screenshots/dashboard-admin.webp" alt="Dashboard del administrador" /><br/><sub>Panel del administrador</sub></td>
+<td width="33%"><img src="./assets/screenshots/weekly-schedule-teacher.png" alt="Horario semanal del profesor" /><br/><sub>Horario semanal del profesor</sub></td>
+</tr>
+</table>
+
+</div>
 
 ## Repositorios
 
