@@ -2,67 +2,75 @@
 
 <img src="./assets/demy.webp" alt="Demy" width="360" />
 
-### Plataforma académica todo-en-uno para academias de educación tradicional
+### All-in-one academic management for traditional education academies
 
 [![Angular](https://img.shields.io/badge/Angular-19-DD0031?logo=angular&logoColor=white)](https://angular.dev)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5-6DB33F?logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
 [![Java](https://img.shields.io/badge/Java-21-007396?logo=openjdk&logoColor=white)](https://openjdk.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)](https://www.mysql.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 </div>
 
 ---
 
-## ¿Qué es Demy?
+## What is Demy?
 
-**Demy** es una plataforma web pensada para simplificar la gestión académica y administrativa de academias de educación tradicional (preuniversitarias, institutos, academias de reforzamiento, etc.). Centraliza en un solo lugar procesos que hoy suelen resolverse con hojas de cálculo y mensajes sueltos: matrículas, horarios, asistencia, pagos y administración de usuarios.
+**Demy** is a web platform that simplifies academic and administrative management for pre-university academies, institutes, and tutoring centers. It replaces scattered spreadsheets and messages with a single workspace for enrollment, scheduling, attendance, payments, finances, and user administration.
 
-El proyecto nació como parte del curso **1ASI0729 - Desarrollo de Aplicaciones Open Source** de la carrera de Ingeniería de Software de la **Universidad Peruana de Ciencias Aplicadas (UPC)**, bajo la startup ficticia **SmartEdu**, y fue construido siguiendo **Lean UX** y **Domain-Driven Design (DDD)**, con una separación clara en bounded contexts: IAM, Enrollments, Scheduling, Attendance y Billing.
+The product provides dedicated experiences for two roles:
 
-## Vista previa
+- **Administrators** manage students, teachers, courses, classrooms, academic periods, enrollments, schedules, billing, and expenses.
+- **Teachers** review or reschedule their classes, record attendance, and inspect attendance reports.
+
+The interface is available in English and Spanish and adapts to desktop and mobile browsers.
+
+## Preview
 
 <div align="center">
 
 <table>
 <tr>
-<td width="33%"><img src="./assets/screenshots/login.webp" alt="Login de Demy" /><br/><sub>Inicio de sesión</sub></td>
-<td width="33%"><img src="./assets/screenshots/dashboard-admin.webp" alt="Dashboard del administrador" /><br/><sub>Panel del administrador</sub></td>
-<td width="33%"><img src="./assets/screenshots/weekly-schedule-teacher.png" alt="Horario semanal del profesor" /><br/><sub>Horario semanal del profesor</sub></td>
+<td width="50%"><img src="./assets/screenshots/landing-hero-en.webp" alt="Demy landing page" /><br/><sub>Public product website</sub></td>
+<td width="50%"><img src="./assets/screenshots/admin-finance-en.webp" alt="Financial management for administrators" /><br/><sub>Financial management</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="./assets/screenshots/teacher-attendance-en.webp" alt="Attendance registration for teachers" /><br/><sub>Attendance registration</sub></td>
+<td width="50%"><img src="./assets/screenshots/swagger-overview.webp" alt="Demy OpenAPI documentation" /><br/><sub>OpenAPI-documented REST API</sub></td>
 </tr>
 </table>
 
 </div>
 
-## Repositorios
+## Repositories
 
-| Repositorio | Descripción | Stack |
+| Repository | Description | Stack |
 |---|---|---|
-| [**demy-web-app**](https://github.com/smarteduhq/demy-web-app) | Aplicación web (SPA) para coordinadores, profesores y estudiantes. Componentes standalone, ruteo lazy-loaded por bounded context, i18n e internacionalización accesible. | Angular 19 · Angular Material · ngx-translate |
-| [**demy-web-service**](https://github.com/smarteduhq/demy-web-service) | API REST que expone los distintos bounded contexts del dominio (IAM, Enrollments, Scheduling, Attendance, Billing) siguiendo una arquitectura por capas. | Spring Boot 3.5 · Java 21 · MySQL · JPA |
-| [**demy-landing-page**](https://github.com/smarteduhq/demy-landing-page) | Landing page de presentación del producto, con soporte multi-idioma (inglés/español). | HTML · Tailwind CSS · JavaScript |
-| [**demy-report**](https://github.com/smarteduhq/demy-report) | Informe académico del proyecto: contexto, elicitación de requerimientos, diseño y evidencias de desarrollo por sprint. | Markdown |
+| [**demy-web-app**](https://github.com/smarteduhq/demy-web-app) | Responsive SPA for administrators and teachers, with authentication, role-aware navigation, and internationalization. | Angular 19 · Angular Material · ngx-translate · Stripe.js |
+| [**demy-web-service**](https://github.com/smarteduhq/demy-web-service) | JWT-secured REST API covering IAM, Enrollment, Scheduling, Attendance, and Billing. | Spring Boot 3.5 · Java 21 · MySQL · JPA |
+| [**demy-landing-page**](https://github.com/smarteduhq/demy-landing-page) | Responsive public product website in English and Spanish. | HTML · Tailwind CSS · JavaScript |
+| [**demy-report**](https://github.com/smarteduhq/demy-report) | Academic report covering research, requirements, design, architecture, and sprint evidence. | Markdown · PlantUML |
 
-## Arquitectura
+## Architecture
 
-Demy está organizada como un sistema de dos capas (frontend SPA + backend API REST) desacoplado por bounded contexts de dominio:
-
+```text
+demy-landing-page ───────▶ registration and sign-in
+                                  │
+                                  ▼
+demy-web-app ───── HTTP/REST + JWT ─────▶ demy-web-service ───── JPA ─────▶ MySQL
+  Angular 19                               Spring Boot 3.5
 ```
-demy-web-app  ──HTTP/REST──▶  demy-web-service  ──JPA──▶  MySQL
-(Angular 19)                  (Spring Boot 3.5)
-```
 
-Cada bounded context (**IAM**, **Enrollments**, **Scheduling**, **Attendance**, **Billing**) se modela de forma independiente tanto en el frontend como en el backend, siguiendo los principios de Domain-Driven Design.
+The frontend and backend share a functional organization around the **IAM**, **Enrollment**, **Scheduling**, **Attendance**, and **Billing** bounded contexts. Within the service, each context separates domain, application, infrastructure, and REST interface concerns.
 
-## Equipo
+## Project background
 
-Demy es desarrollado por un equipo de estudiantes de Ingeniería de Software de la UPC, como parte de su formación en desarrollo de software open source.
+Demy began in the **1ASI0729 - Open Source Application Development** course of the Software Engineering program at the **Peruvian University of Applied Sciences (UPC)**, under the academic startup **SmartEdu**. The team applied Lean UX, Domain-Driven Design, GitFlow, and continuous documentation to take the product from research to an integrated web release.
 
 ---
 
 <div align="center">
 
-¿Quieres saber más? Revisa el [informe del proyecto](https://github.com/smarteduhq/demy-report).
+Read the [project report](https://github.com/smarteduhq/demy-report) for the complete process and supporting evidence.
 
 </div>
