@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/smartedu.PNG" alt="SmartEdu" width="520" />
+<img src="./assets/smartedu.webp" alt="SmartEdu" width="520" />
 
 ### Technology for more efficient, transparent, and accessible academy management
 
