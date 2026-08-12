@@ -1,8 +1,26 @@
 <div align="center">
 
-<img src="./assets/demy.webp" alt="Demy" width="360" />
+<img src="./assets/smartedu.PNG" alt="SmartEdu" width="520" />
 
-### All-in-one academic management for traditional education academies
+### Technology for more efficient, transparent, and accessible academy management
+
+</div>
+
+---
+
+## About SmartEdu
+
+**SmartEdu** is a startup founded by Software Engineering students to improve how educational academies in Peru manage their daily operations. It focuses on replacing fragmented, manual processes with accessible technology designed around the real workflows of in-person education providers.
+
+Our mission is to transform academy administration by streamlining essential processes such as enrollment, attendance, scheduling, and payments. Our vision is to help lead the digital transformation of educational academies in Peru through solutions that make internal operations more efficient, transparent, and accessible.
+
+## Meet Demy
+
+<div align="center">
+
+<img src="./assets/demy.webp" alt="Demy" width="320" />
+
+### SmartEdu's all-in-one platform for academic and administrative management
 
 [![Angular](https://img.shields.io/badge/Angular-19-DD0031?logo=angular&logoColor=white)](https://angular.dev)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5-6DB33F?logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
@@ -14,9 +32,7 @@
 
 ---
 
-## What is Demy?
-
-**Demy** is a web platform that simplifies academic and administrative management for pre-university academies, institutes, and tutoring centers. It replaces scattered spreadsheets and messages with a single workspace for enrollment, scheduling, attendance, payments, finances, and user administration.
+**Demy** is the web platform through which SmartEdu delivers that mission. It simplifies academic and administrative management for pre-university academies, institutes, and tutoring centers, replacing scattered spreadsheets and messages with a single workspace for enrollment, scheduling, attendance, payments, finances, and user administration.
 
 The product provides dedicated experiences for two roles:
 
@@ -65,7 +81,7 @@ The frontend and backend share a functional organization around the **IAM**, **E
 
 ## Project background
 
-Demy began in the **1ASI0729 - Open Source Application Development** course of the Software Engineering program at the **Peruvian University of Applied Sciences (UPC)**, under the academic startup **SmartEdu**. The team applied Lean UX, Domain-Driven Design, GitFlow, and continuous documentation to take the product from research to an integrated web release.
+SmartEdu and Demy began in the **1ASI0729 - Open Source Application Development** course of the Software Engineering program at the **Peruvian University of Applied Sciences (UPC)**. The team applied Lean UX, Domain-Driven Design, GitFlow, and continuous documentation to take the product from research to an integrated web release.
 
 ---
 
