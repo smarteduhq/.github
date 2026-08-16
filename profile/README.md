@@ -24,8 +24,12 @@ Our mission is to transform academy administration by streamlining essential pro
 
 <p><strong>Explore Demy</strong></p>
 
-<a href="https://demy-academy.netlify.app/" title="Visit Demy landing page"><img src="./assets/demy-landing-cta.svg" width="780" alt="Visit Demy landing page: product overview, pricing, and contact" /></a><br />
-<a href="https://demy-web-app.netlify.app/demo" title="Try Demy live demo"><img src="./assets/demy-demo-cta.svg" width="780" alt="Try Demy live demo: explore the interactive academy experience" /></a>
+<table align="center">
+<tr>
+<td align="center"><a href="https://demy-academy.netlify.app/" title="Visit Demy landing page"><img src="./assets/demy-landing-cta.svg" width="390" alt="Visit Demy landing page: product overview, pricing, and contact" /></a></td>
+<td align="center"><a href="https://demy-web-app.netlify.app/demo" title="Try Demy live demo"><img src="./assets/demy-demo-cta.svg" width="390" alt="Try Demy live demo: explore the interactive academy experience" /></a></td>
+</tr>
+</table>
 
 </div>
 
