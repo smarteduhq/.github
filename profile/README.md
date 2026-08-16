@@ -22,11 +22,8 @@ Our mission is to transform academy administration by streamlining essential pro
 
 ### SmartEdu's all-in-one platform for academic and administrative management
 
-[![Angular](https://img.shields.io/badge/Angular-19-DD0031?logo=angular&logoColor=white)](https://angular.dev)
-[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5-6DB33F?logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
-[![Java](https://img.shields.io/badge/Java-21-007396?logo=openjdk&logoColor=white)](https://openjdk.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)](https://www.mysql.com/)
+<a href="https://demy-academy.netlify.app/"><img src="https://img.shields.io/badge/Visit%20Landing%20Page-0f766e?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Visit Demy landing page" /></a>
+<a href="https://demy-web-app.netlify.app/demo"><img src="https://img.shields.io/badge/Launch%20Live%20Demo-ff6b35?style=for-the-badge&amp;logo=rocket&amp;logoColor=white" alt="Launch Demy live demo" /></a>
 
 </div>
 
@@ -40,6 +37,15 @@ The product provides dedicated experiences for two roles:
 - **Teachers** review or reschedule their classes, record attendance, and inspect attendance reports.
 
 The interface is available in English and Spanish and adapts to desktop and mobile browsers.
+
+## Repositories
+
+| Repository | Description | Stack |
+|---|---|---|
+| [**demy-web-app**](https://github.com/smarteduhq/demy-web-app) | Responsive SPA for administrators and teachers, with authentication, role-aware navigation, and internationalization. | [![Angular](https://img.shields.io/badge/Angular-19-DD0031?logo=angular&logoColor=white)](https://angular.dev) [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/) |
+| [**demy-web-service**](https://github.com/smarteduhq/demy-web-service) | JWT-secured REST API covering IAM, Enrollment, Scheduling, Attendance, and Billing. | [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5-6DB33F?logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot) [![Java](https://img.shields.io/badge/Java-21-007396?logo=openjdk&logoColor=white)](https://openjdk.org/) [![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)](https://www.mysql.com/) |
+| [**demy-landing-page**](https://github.com/smarteduhq/demy-landing-page) | Responsive public product website in English and Spanish. | [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML) [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/) [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) |
+| [**demy-report**](https://github.com/smarteduhq/demy-report) | Academic report covering research, requirements, design, architecture, and sprint evidence. | [![Markdown](https://img.shields.io/badge/Markdown-000000?logo=markdown&logoColor=white)](https://www.markdownguide.org/) [![PlantUML](https://img.shields.io/badge/PlantUML-1F4E79?logo=uml&logoColor=white)](https://plantuml.com/) |
 
 ## Preview
 
@@ -57,15 +63,6 @@ The interface is available in English and Spanish and adapts to desktop and mobi
 </table>
 
 </div>
-
-## Repositories
-
-| Repository | Description | Stack |
-|---|---|---|
-| [**demy-web-app**](https://github.com/smarteduhq/demy-web-app) | Responsive SPA for administrators and teachers, with authentication, role-aware navigation, and internationalization. | Angular 19 · Angular Material · ngx-translate · Stripe.js |
-| [**demy-web-service**](https://github.com/smarteduhq/demy-web-service) | JWT-secured REST API covering IAM, Enrollment, Scheduling, Attendance, and Billing. | Spring Boot 3.5 · Java 21 · MySQL · JPA |
-| [**demy-landing-page**](https://github.com/smarteduhq/demy-landing-page) | Responsive public product website in English and Spanish. | HTML · Tailwind CSS · JavaScript |
-| [**demy-report**](https://github.com/smarteduhq/demy-report) | Academic report covering research, requirements, design, architecture, and sprint evidence. | Markdown · PlantUML |
 
 ## Architecture
 
