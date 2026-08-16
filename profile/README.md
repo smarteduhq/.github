@@ -22,8 +22,22 @@ Our mission is to transform academy administration by streamlining essential pro
 
 ### SmartEdu's all-in-one platform for academic and administrative management
 
-<a href="https://demy-academy.netlify.app/"><img src="https://img.shields.io/badge/Visit%20Landing%20Page-0f766e?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Visit Demy landing page" /></a>
-<a href="https://demy-web-app.netlify.app/demo"><img src="https://img.shields.io/badge/Launch%20Live%20Demo-ff6b35?style=for-the-badge&amp;logo=rocket&amp;logoColor=white" alt="Launch Demy live demo" /></a>
+<p><strong>Explore Demy</strong></p>
+
+<table align="center">
+<tr>
+<td align="center">
+<a href="https://demy-academy.netlify.app/" title="Open Demy landing page"><img src="https://img.shields.io/badge/OPEN%20LANDING%20PAGE%20%E2%86%92-0f766e?style=for-the-badge&amp;labelColor=115e59&amp;logo=googlechrome&amp;logoColor=white" alt="Open Demy landing page" /></a>
+</td>
+<td align="center">
+<a href="https://demy-web-app.netlify.app/demo" title="Try the Demy live demo"><img src="https://img.shields.io/badge/TRY%20LIVE%20DEMO%20NOW%20%E2%86%92-ff6b35?style=for-the-badge&amp;labelColor=c2410c&amp;logo=rocket&amp;logoColor=white" alt="Try the Demy live demo" /></a>
+</td>
+</tr>
+<tr>
+<td align="center"><sub>Explore the public product website</sub></td>
+<td align="center"><sub>Open the interactive experience</sub></td>
+</tr>
+</table>
 
 </div>
 
